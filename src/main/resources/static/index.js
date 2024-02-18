@@ -14,7 +14,7 @@ function visMelding() {
         document.getElementById("fetter").innerHTML = "Du må fylle inn etternavnet ditt!";
         feil = true;
     }
-    if (document.getElementById("tel").value === "") {
+    if (document.getElementById("telnr").value === "") {
         document.getElementById("fnr").innerHTML = "Du må fylle inn telefonnr ditt!";
         feil = true;
     }
@@ -39,7 +39,7 @@ function visMelding() {
             antall: document.getElementById("antall").value,
             fornavn: document.getElementById("fornavn").value,
             etternavn: document.getElementById("etternavn").value,
-            telefonnr: document.getElementById("tel").value,
+            telefonnr: document.getElementById("telnr").value,
             mail: document.getElementById("mail").value,
         }
 
@@ -63,7 +63,7 @@ function visMelding() {
         document.getElementById("film").value = "Velg film her";
         document.getElementById("fornavn").value = "";
         document.getElementById("etternavn").value = "";
-        document.getElementById("tel").value = "";
+        document.getElementById("telnr").value = "";
         document.getElementById("mail").value = "";
 
 
