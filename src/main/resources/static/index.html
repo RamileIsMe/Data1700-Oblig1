@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig1</title>
+    <script src="index.js"></script>
+
+</head>
+
+<h1>Bestilling av kinobilletter</h1>
+
+<table>
+    <tr>
+        <td>
+            Velg film:
+        </td>
+        <td>
+            <select id="film">
+                <option>Velg film her</option>
+                <option>Terminator</option>
+                <option>Guardians of Galaxy</option>
+                <option>Avengers</option>
+                <option>Split</option>
+                <option>Glass</option>
+                <option>The nun</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<br>
+
+
+<label for="antall">Antall:</label>
+<input type="number" min="0" id="antall" style="margin-left: 4em; margin-bottom: 1em"/>
+<span id="fantall"></span>
+<br>
+
+<label for="fornavn">Fornavn:</label>
+<input type="text" id="fornavn" style="margin-left: 3em; margin-bottom: 1em">
+<span id="fnavn"></span>
+<br>
+
+
+<label for="etternavn">Etternavn:</label>
+<input type="text" id="etternavn" style="margin-left: 2.3em; margin-bottom: 1em"/>
+<span id="fetter"></span>
+<br>
+
+<label for="tel">Telefonnr:</label>
+<input type="text" id="tel" style="margin-left: 2.3em; margin-bottom: 1em"/>
+<span id="fnr"></span>
+<br>
+
+<label for="mail">E-post:</label>
+<input type="text" id="mail" style="margin-left: 3.8em; margin-bottom: 1em"/>
+<span id="fmail"></span>
+<br>
+
+<button type="button" style="margin-top: 1em" onclick="visMelding()">Kjøp billetter</button>
+
+<h2>Alle billetter</h2>
+
+<div id="kvitto"></div>
+
+<button type="button" onclick="deleteAll()">Slett alle billettene</button>
+
+</body>
+
+</html>
+
