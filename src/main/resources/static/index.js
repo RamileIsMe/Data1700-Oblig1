@@ -14,12 +14,12 @@ function visMelding() {
         document.getElementById("fetter").innerHTML = "Du må fylle inn etternavnet ditt!";
         feil = true;
     }
-    if (document.getElementById("telnr").value === "") {
-        document.getElementById("fnr").innerHTML = "Du må fylle inn telefonnr ditt!";
+    if (document.getElementById("tel").value.match(/"^[0-9]*$"/)) {
+        document.getElementById("fnr").innerHTML = "Du må fylle inn gyldig telefonnummer!";
         feil = true;
     }
-    if (document.getElementById("mail").value === "") {
-        document.getElementById("fmail").innerHTML = "Du må fylle inn e-post adressen din!";
+    if (!document.getElementById("mail").value.match(/@/)) {
+        document.getElementById("fmail").innerHTML = "Du må fylle inn gyldig e-post adresse!";
         feil = true;
     }
     if (feil === false) {
@@ -39,7 +39,7 @@ function visMelding() {
             antall: document.getElementById("antall").value,
             fornavn: document.getElementById("fornavn").value,
             etternavn: document.getElementById("etternavn").value,
-            telefonnr: document.getElementById("telnr").value,
+            telefonnr: document.getElementById("tel").value,
             mail: document.getElementById("mail").value,
         }
 
@@ -58,12 +58,12 @@ function visMelding() {
 
 
         }
-        document.getElementById("kvitto").innerHTML = ut;
+        document.getElementById("kvittering").innerHTML = ut;
         document.getElementById("antall").value = "";
         document.getElementById("film").value = "Velg film her";
         document.getElementById("fornavn").value = "";
         document.getElementById("etternavn").value = "";
-        document.getElementById("telnr").value = "";
+        document.getElementById("tel").value = "";
         document.getElementById("mail").value = "";
 
 
@@ -73,7 +73,7 @@ function visMelding() {
 function deleteAll() {
 
     billetter.splice(0, billetter.length);
-    document.getElementById("kvitto").innerHTML = "";
+    document.getElementById("kvittering").innerHTML = "";
 
 }
 
