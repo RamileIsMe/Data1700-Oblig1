@@ -3,7 +3,7 @@ OsloMet brukernavn: rapar9510
 
 GitHub brukernavn: RamileIsMe
 
-GitHub repo URL: https://github.com/RamileIsMe/Oblig1
+GitHub repo URL: https://github.com/RamileIsMe/Data1700-Oblig1
 
 Github pages URL: https://mathias-egeberg.github.io/oblig1/src/main/resources/static/index.html
 
